@@ -9,9 +9,10 @@ public class Car {
     }
 
     public Car(String color, String model, int power) {
-        this.color = color;
+        this.color = color; //Car.color=color
         this.model = model;
         this.power = power;
+        //this쓴 이유: 그냥 명시적으로. public Car 대신. this=해당 클래스. (pointer때 중요)
     }
 
     public void setColor(String color){
