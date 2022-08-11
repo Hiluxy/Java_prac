@@ -1,11 +1,14 @@
+package transport;
+
 public class trans {
-    int max_num;
-    int pre_num;
-    int cost;
-    String bus_num;
-    int oil;
-    int speed;
+    int max_num=0;
+    int pre_num=0;
+    int cost=0;
+    int bus_num=0;
+    int oil=100;
+    int speed=0;
     String status="운행";
+
 
     public void Start(int oil){
         if(oil>=10){
@@ -13,6 +16,7 @@ public class trans {
         }
     }
     public void PlusPerson(){
+        if(status=="일반"){}
         //- 승객 탑승은 택시 상태가 ‘일반'일 때만 가능합니다.
         //- 그 외 택시는 ‘탑승 불가’ 처리를 해주세요.
         //- ‘일반’ 상태의 택시가 승객을 태우면 ‘운행 중’ 상태로 변경해 주세요
